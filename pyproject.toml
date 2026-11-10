@@ -1,0 +1,25 @@
+[project]
+name = "langchain-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "bufferstray", email = "buff@bufferstray.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-anthropic>=1.7.10",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.7.6",
+    "langgraph>=1.2.20",
+    "langgraph-cli[inmem]>=0.4.42",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langchain-rag = "langchain_rag.main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
